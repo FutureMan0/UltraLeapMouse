@@ -1,0 +1,9 @@
+# ninja log v6
+10	130	7531938464017506	CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj	2c29c824ff0c6fff
+3	577	7532018280218760	build.ninja	51816f4e4a0d505f
+22	295	7531931021543528	UltraLeapMouse_Test.exe	b2ba649e38fe8896
+3	357	7532018280218760	build.ninja	51816f4e4a0d505f
+9	177	7532022864134656	CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj	336c70255c89bb74
+178	499	7532022865827921	UltraLeapMouse_Test.exe	b2ba649e38fe8896
+7	158	7532027455390467	CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj	336c70255c89bb74
+159	380	7532027456914615	UltraLeapMouse_Test.exe	b2ba649e38fe8896
