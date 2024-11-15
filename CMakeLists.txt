@@ -13,7 +13,8 @@ set(LEAP_SDK_PATH "C:/Program Files/Ultraleap/LeapSDK")
 include_directories(${LEAP_SDK_PATH}/include)
 
 # Quellcode-Dateien und LeapC-Beispieldateien hinzufügen
-add_executable(UltraLeapMouse_Test main.cpp)
+add_executable(UltraLeapMouse_Test main.cpp
+        mouseControl.cpp)
 
 # LeapC-Bibliothek hinzufügen und verlinken
 if(WIN32)

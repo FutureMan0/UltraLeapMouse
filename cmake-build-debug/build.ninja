@@ -56,6 +56,13 @@ build CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj: CXX_COMPILER__UltraLeapMo
   OBJECT_DIR = CMakeFiles\UltraLeapMouse_Test.dir
   OBJECT_FILE_DIR = CMakeFiles\UltraLeapMouse_Test.dir
 
+build CMakeFiles/UltraLeapMouse_Test.dir/mouseControl.cpp.obj: CXX_COMPILER__UltraLeapMouse_Test_unscanned_Debug C$:/Projects/UltraLeapMouse_Test/mouseControl.cpp || cmake_object_order_depends_target_UltraLeapMouse_Test
+  DEP_FILE = CMakeFiles\UltraLeapMouse_Test.dir\mouseControl.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Program Files/Ultraleap/LeapSDK/include"
+  OBJECT_DIR = CMakeFiles\UltraLeapMouse_Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\UltraLeapMouse_Test.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target UltraLeapMouse_Test
@@ -64,7 +71,7 @@ build CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj: CXX_COMPILER__UltraLeapMo
 #############################################
 # Link the executable UltraLeapMouse_Test.exe
 
-build UltraLeapMouse_Test.exe: CXX_EXECUTABLE_LINKER__UltraLeapMouse_Test_Debug CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj | C$:/Program$ Files/Ultraleap/LeapSDK/lib/x64/LeapC.lib
+build UltraLeapMouse_Test.exe: CXX_EXECUTABLE_LINKER__UltraLeapMouse_Test_Debug CMakeFiles/UltraLeapMouse_Test.dir/main.cpp.obj CMakeFiles/UltraLeapMouse_Test.dir/mouseControl.cpp.obj | C$:/Program$ Files/Ultraleap/LeapSDK/lib/x64/LeapC.lib
   FLAGS = -g
   LINK_LIBRARIES = "C:/Program Files/Ultraleap/LeapSDK/lib/x64/LeapC.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\UltraLeapMouse_Test.dir

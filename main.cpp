@@ -1,3 +1,7 @@
+//
+// Created by Luis Blüml on 14.11.2024.
+//
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "LeapC.h"
@@ -39,15 +43,14 @@ static void OnFrame(const LEAP_TRACKING_EVENT *frame) {
             hand->palm.position.x,
             hand->palm.position.y,
             hand->palm.position.z);
+
+        // Loop through the fingers
+
     }
 }
 
-static void OnImage(const LEAP_IMAGE_EVENT *image) {
-    printf("Image %lli  => Left: %d x %d (bpp=%d), Right: %d x %d (bpp=%d)\n",
-        (long long int)image->info.frame_id,
-        image->image[0].properties.width, image->image[0].properties.height, image->image[0].properties.bpp * 8,
-        image->image[1].properties.width, image->image[1].properties.height, image->image[1].properties.bpp * 8);
-}
+
+
 
 static void* allocate(uint32_t size, eLeapAllocatorType typeHint, void* state) {
     return malloc(size);
@@ -93,9 +96,6 @@ int main(int argc, char** argv) {
                 break;
             case eLeapEventType_Tracking:
                 OnFrame(msg.tracking_event);
-                break;
-            case eLeapEventType_Image:
-                OnImage(msg.image_event);
                 break;
             default:
                 break;
